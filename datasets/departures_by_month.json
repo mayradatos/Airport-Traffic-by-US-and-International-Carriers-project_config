@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1588360080760
+    "lastModifiedOn": 1588360118634
   },
   "creationTag": {
     "versionNumber": 0,
@@ -107,6 +107,10 @@
         "type": "bigint"
       },
       {
+        "name": "Total_US_mktshare",
+        "type": "string"
+      },
+      {
         "name": "1_Scheduled_sum",
         "type": "bigint"
       },
@@ -143,16 +147,12 @@
         "type": "bigint"
       },
       {
-        "name": "Total_total",
-        "type": "bigint"
-      },
-      {
         "name": "Total_IN_mktshare",
-        "type": "double"
+        "type": "string"
       },
       {
-        "name": "Total_US_mktshare",
-        "type": "double"
+        "name": "Total",
+        "type": "bigint"
       }
     ],
     "userModified": true
