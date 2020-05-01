@@ -41,20 +41,71 @@
       }
     }
   },
-  "explicitIdentifiers": [],
+  "explicitIdentifiers": [
+    "Year",
+    "Month"
+  ],
   "otherColumns": [],
   "pivots": [
     {
+      "valueLimit": "TOP_N",
       "minOccLimit": 0,
-      "topnLimit": 0,
-      "globalCount": true,
+      "topnLimit": 20,
+      "globalCount": false,
       "explicitValues": [],
       "keyColumns": [
         "carriergroup"
       ],
-      "valueColumns": []
+      "valueColumns": [
+        {
+          "last": false,
+          "max": false,
+          "column": "Scheduled",
+          "count": false,
+          "sum": true,
+          "concat": false,
+          "type": "bigint",
+          "$agg": "sum",
+          "countDistinct": false,
+          "min": false,
+          "avg": false,
+          "stddev": false,
+          "first": false
+        },
+        {
+          "last": false,
+          "max": false,
+          "column": "Charter",
+          "count": false,
+          "sum": true,
+          "concat": false,
+          "type": "bigint",
+          "$agg": "sum",
+          "countDistinct": false,
+          "min": false,
+          "avg": false,
+          "stddev": false,
+          "first": false
+        },
+        {
+          "last": false,
+          "max": false,
+          "column": "Total",
+          "count": false,
+          "sum": true,
+          "concat": false,
+          "type": "bigint",
+          "$agg": "sum",
+          "countDistinct": false,
+          "min": false,
+          "avg": false,
+          "stddev": false,
+          "first": false
+        }
+      ]
     }
   ],
   "computedColumns": [],
-  "customAggregates": []
+  "customAggregates": [],
+  "enginesPreferences": {}
 }
