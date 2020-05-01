@@ -127,7 +127,7 @@
           "type": "CreateColumnWithGREL",
           "params": {
             "expression": "0_Total_sum + 1_Total_sum",
-            "column": "Total_total"
+            "column": "Total"
           },
           "alwaysShowComment": false
         },
@@ -181,6 +181,7 @@
     "Charter_total": 113,
     "Total_US_mktshare": 169,
     "1_Total_sum": 100,
+    "Total": 100,
     "Total_IN_mktshare": 169
   },
   "sorting": [],
