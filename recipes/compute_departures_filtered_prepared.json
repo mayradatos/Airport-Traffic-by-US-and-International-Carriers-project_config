@@ -62,18 +62,18 @@
     "main": {
       "items": [
         {
-          "ref": "departures_filtered_prepared",
+          "ref": "departures_prepared",
           "appendMode": false
         }
       ]
     }
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1588358622006
+    "lastModifiedOn": 1588358662325
   },
   "creationTag": {
     "versionNumber": 0,
