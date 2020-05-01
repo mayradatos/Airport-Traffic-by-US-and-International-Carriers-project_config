@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1588359656423
+    "lastModifiedOn": 1588359744520
   },
   "creationTag": {
     "versionNumber": 0,
@@ -85,8 +85,153 @@
     }
   },
   "schema": {
-    "columns": [],
-    "userModified": false
+    "columns": [
+      {
+        "name": "Year",
+        "type": "bigint"
+      },
+      {
+        "name": "Month",
+        "type": "bigint"
+      },
+      {
+        "name": "0_Scheduled_sum",
+        "type": "bigint"
+      },
+      {
+        "name": "0_Charter_sum",
+        "type": "bigint"
+      },
+      {
+        "name": "0_Total_sum",
+        "type": "bigint"
+      },
+      {
+        "name": "1_Scheduled_sum",
+        "type": "bigint"
+      },
+      {
+        "name": "1_Charter_sum",
+        "type": "bigint"
+      },
+      {
+        "name": "1_Total_sum",
+        "type": "bigint"
+      }
+    ],
+    "userModified": false,
+    "metadata": {
+      "engineType": "DSS",
+      "pivotElementsModalities": [
+        {
+          "pivotElement": {
+            "keyColumns": [
+              "carriergroup"
+            ],
+            "valueLimit": "TOP_N",
+            "topnLimit": 20,
+            "minOccLimit": 0,
+            "explicitValues": [],
+            "globalCount": false,
+            "valueColumns": [
+              {
+                "column": "Scheduled",
+                "type": "bigint",
+                "min": false,
+                "max": false,
+                "count": false,
+                "countDistinct": false,
+                "sum": true,
+                "concat": false,
+                "stddev": false,
+                "avg": false,
+                "sum2": false,
+                "first": false,
+                "last": false,
+                "concatDistinct": false,
+                "firstLastNotNull": false
+              },
+              {
+                "column": "Charter",
+                "type": "bigint",
+                "min": false,
+                "max": false,
+                "count": false,
+                "countDistinct": false,
+                "sum": true,
+                "concat": false,
+                "stddev": false,
+                "avg": false,
+                "sum2": false,
+                "first": false,
+                "last": false,
+                "concatDistinct": false,
+                "firstLastNotNull": false
+              },
+              {
+                "column": "Total",
+                "type": "bigint",
+                "min": false,
+                "max": false,
+                "count": false,
+                "countDistinct": false,
+                "sum": true,
+                "concat": false,
+                "stddev": false,
+                "avg": false,
+                "sum2": false,
+                "first": false,
+                "last": false,
+                "concatDistinct": false,
+                "firstLastNotNull": false
+              }
+            ]
+          },
+          "pivotedModalities": [
+            {
+              "keyValues": [
+                "0"
+              ],
+              "name": "0",
+              "valueColumns": [
+                {
+                  "source": "Scheduled",
+                  "pivoted": "0_Scheduled"
+                },
+                {
+                  "source": "Total",
+                  "pivoted": "0_Total"
+                },
+                {
+                  "source": "Charter",
+                  "pivoted": "0_Charter"
+                }
+              ]
+            },
+            {
+              "keyValues": [
+                "1"
+              ],
+              "name": "1",
+              "valueColumns": [
+                {
+                  "source": "Scheduled",
+                  "pivoted": "1_Scheduled"
+                },
+                {
+                  "source": "Total",
+                  "pivoted": "1_Total"
+                },
+                {
+                  "source": "Charter",
+                  "pivoted": "1_Charter"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
   },
   "metrics": {
     "probes": [
