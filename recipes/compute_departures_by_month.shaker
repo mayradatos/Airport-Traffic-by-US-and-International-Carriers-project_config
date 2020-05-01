@@ -162,16 +162,10 @@
       "disabled": false,
       "type": "ColumnsSelector",
       "params": {
-        "columns": [
-          "0_Scheduled_sum",
-          "0_Charter_sum",
-          "0_Total_sum",
-          "1_Scheduled_sum",
-          "1_Charter_sum",
-          "1_Total_sum"
-        ],
+        "columns": [],
         "keep": false,
-        "appliesTo": "COLUMNS"
+        "appliesTo": "PATTERN",
+        "appliesToPattern": "^[0-1]_\\w*"
       },
       "alwaysShowComment": false
     }
