@@ -137,23 +137,42 @@
           "disabled": false,
           "type": "CreateColumnWithGREL",
           "params": {
-            "expression": "0_Total_sum / Total_total * 100",
+            "expression": "0_Total_sum / Total * 100",
             "column": "Total_US_mktshare"
           },
           "alwaysShowComment": false
         },
         {
-          "preview": true,
+          "preview": false,
           "metaType": "PROCESSOR",
           "disabled": false,
           "type": "CreateColumnWithGREL",
           "params": {
-            "expression": "1_Total_sum / Total_total * 100",
+            "expression": "1_Total_sum / Total * 100",
             "column": "Total_IN_mktshare"
           },
           "alwaysShowComment": false
         }
       ],
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "0_Scheduled_sum",
+          "0_Charter_sum",
+          "0_Total_sum",
+          "1_Scheduled_sum",
+          "1_Charter_sum",
+          "1_Total_sum"
+        ],
+        "keep": false,
+        "appliesTo": "COLUMNS"
+      },
       "alwaysShowComment": false
     }
   ],
