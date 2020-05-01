@@ -25,8 +25,77 @@
     "autoRefreshSample": false
   },
   "explorationFilters": [],
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FilterOnValue",
+      "params": {
+        "normalizationMode": "EXACT",
+        "booleanMode": "AND",
+        "columns": [
+          "Year"
+        ],
+        "values": [
+          "2017"
+        ],
+        "matchingMode": "FULL_STRING",
+        "action": "KEEP_ROW",
+        "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "(Total - Total_lag12)/Total_lag12 * 100",
+        "column": "year_toyear_change"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnReorder",
+      "params": {
+        "referenceColumn": "Total_US_mktshare",
+        "columns": [
+          "Total"
+        ],
+        "reorderAction": "AFTER_COLUMN",
+        "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "Scheduled_total",
+          "Scheduled_IN_mktshare",
+          "Scheduled_US_mktshare",
+          "Charter_total",
+          "Charter_IN_mktshare",
+          "Charter_US_mktshare"
+        ],
+        "keep": false,
+        "appliesTo": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -34,7 +103,21 @@
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "Charter_IN_mktshare": 183,
+    "Scheduled_IN_mktshare": 197,
+    "Scheduled_US_mktshare": 197,
+    "Charter_US_mktshare": 183,
+    "Scheduled_total": 128,
+    "year_toyear_change": 176,
+    "Total_lag12": 100,
+    "Month": 100,
+    "Year": 100,
+    "Charter_total": 113,
+    "Total_US_mktshare": 169,
+    "Total": 100,
+    "Total_IN_mktshare": 169
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
