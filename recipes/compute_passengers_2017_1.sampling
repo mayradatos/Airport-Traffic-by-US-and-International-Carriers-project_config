@@ -4,7 +4,7 @@
     "conditions": [
       {
         "input": "Year",
-        "col": "Year",
+        "col": "data_dte",
         "string": "2017",
         "num": 0,
         "operator": "\u003d\u003d [string]"
