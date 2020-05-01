@@ -11,7 +11,7 @@
     "main": {
       "items": [
         {
-          "ref": "passengers_2017_prepared",
+          "ref": "passengers_prepared",
           "deps": []
         }
       ]
@@ -28,11 +28,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1588357750251
+    "lastModifiedOn": 1588358010880
   },
   "creationTag": {
     "versionNumber": 0,
