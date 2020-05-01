@@ -1,7 +1,15 @@
 {
   "dashboardAuthorizations": {
     "allAuthorized": false,
-    "authorizations": []
+    "authorizations": [
+      {
+        "objectRef": {
+          "objectId": "departures_by_month_windows_prepared",
+          "objectType": "DATASET"
+        },
+        "modes": []
+      }
+    ]
   },
   "exposedObjects": {
     "objects": []
@@ -167,6 +175,13 @@
     "displayedState": {
       "checks": []
     }
+  },
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1588363838725
   },
   "creationTag": {
     "versionNumber": 0,
