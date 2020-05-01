@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1588359790477
+    "lastModifiedOn": 1588360080760
   },
   "creationTag": {
     "versionNumber": 0,
@@ -111,12 +111,48 @@
         "type": "bigint"
       },
       {
+        "name": "Scheduled_total",
+        "type": "bigint"
+      },
+      {
+        "name": "Scheduled_IN_mktshare",
+        "type": "double"
+      },
+      {
+        "name": "Scheduled_US_mktshare",
+        "type": "double"
+      },
+      {
         "name": "1_Charter_sum",
         "type": "bigint"
       },
       {
+        "name": "Charter_total",
+        "type": "bigint"
+      },
+      {
+        "name": "Charter_IN_mktshare",
+        "type": "double"
+      },
+      {
+        "name": "Charter_US_mktshare",
+        "type": "double"
+      },
+      {
         "name": "1_Total_sum",
         "type": "bigint"
+      },
+      {
+        "name": "Total_total",
+        "type": "bigint"
+      },
+      {
+        "name": "Total_IN_mktshare",
+        "type": "double"
+      },
+      {
+        "name": "Total_US_mktshare",
+        "type": "double"
       }
     ],
     "userModified": true
