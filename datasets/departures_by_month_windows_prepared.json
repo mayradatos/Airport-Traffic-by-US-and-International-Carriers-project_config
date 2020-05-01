@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1588363491340
+    "lastModifiedOn": 1588363599324
   },
   "creationTag": {
     "versionNumber": 0,
@@ -95,16 +95,16 @@
         "type": "bigint"
       },
       {
+        "name": "Total",
+        "type": "bigint"
+      },
+      {
         "name": "Total_IN_mktshare",
         "type": "double"
       },
       {
         "name": "Total_US_mktshare",
         "type": "double"
-      },
-      {
-        "name": "Total",
-        "type": "bigint"
       },
       {
         "name": "Total_lag12",
