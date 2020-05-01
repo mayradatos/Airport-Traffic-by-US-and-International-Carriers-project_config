@@ -5,7 +5,18 @@
   "params": {
     "deleteExtraFiles": true,
     "copyEvenUpToDateFiles": false,
-    "sources": []
+    "sources": [
+      {
+        "useGlobalProxy": true,
+        "providerType": "URL",
+        "params": {
+          "path": "https://data.transportation.gov/api/views/xgub-n9bw/rows.csv?accessType\u003dDOWNLOAD",
+          "consider404AsEmpty": true,
+          "fallbackHeadToGet": true,
+          "trustAnySSLCertificate": false
+        }
+      }
+    ]
   },
   "customMeta": {
     "kv": {}
@@ -24,11 +35,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1588356985589
+    "lastModifiedOn": 1588357014038
   },
   "creationTag": {
     "versionNumber": 0,
