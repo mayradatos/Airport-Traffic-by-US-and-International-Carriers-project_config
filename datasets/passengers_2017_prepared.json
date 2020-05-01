@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1588357267280
+    "lastModifiedOn": 1588357574071
   },
   "creationTag": {
     "versionNumber": 0,
@@ -91,12 +91,24 @@
         "type": "string"
       },
       {
+        "name": "date_parsed",
+        "type": "date"
+      },
+      {
         "name": "Year",
         "type": "bigint"
       },
       {
         "name": "Month",
         "type": "bigint"
+      },
+      {
+        "name": "month_name",
+        "type": "string"
+      },
+      {
+        "name": "year_month",
+        "type": "string"
       },
       {
         "name": "usg_apt_id",
