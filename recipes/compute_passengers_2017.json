@@ -76,18 +76,18 @@
     "main": {
       "items": [
         {
-          "ref": "passengers_2017",
+          "ref": "passengers_filtered",
           "appendMode": false
         }
       ]
     }
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1588357233268
+    "lastModifiedOn": 1588357982037
   },
   "creationTag": {
     "versionNumber": 0,
