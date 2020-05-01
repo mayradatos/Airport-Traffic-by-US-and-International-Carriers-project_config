@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1588357632648
+    "lastModifiedOn": 1588357750089
   },
   "creationTag": {
     "versionNumber": 0,
@@ -87,11 +87,23 @@
   "schema": {
     "columns": [
       {
-        "name": "usg_apt",
+        "name": "IATA_code",
         "type": "string"
       },
       {
-        "name": "count",
+        "name": "aitport_pairs",
+        "type": "bigint"
+      },
+      {
+        "name": "Scheduled",
+        "type": "bigint"
+      },
+      {
+        "name": "Charter",
+        "type": "bigint"
+      },
+      {
+        "name": "Total",
         "type": "bigint"
       }
     ],
