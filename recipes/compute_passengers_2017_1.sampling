@@ -8,6 +8,13 @@
         "string": "2017",
         "num": 0,
         "operator": "\u003d\u003d [string]"
+      },
+      {
+        "input": "Year",
+        "col": "Year",
+        "string": "2016",
+        "num": 0,
+        "operator": "\u003d\u003d [string]"
       }
     ]
   },
