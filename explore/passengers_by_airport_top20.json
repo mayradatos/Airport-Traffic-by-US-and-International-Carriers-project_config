@@ -49,7 +49,7 @@
       "copySelectionFromScript": true,
       "engineType": "LINO",
       "def": {
-        "type": "grouped_columns",
+        "type": "stacked_columns",
         "variant": "normal",
         "name": "Avg. of Scheduled by IATA_code",
         "userEditedName": false,
@@ -61,7 +61,7 @@
               "emptyBinsMode": "ZEROS"
             },
             "maxValues": 20,
-            "generateOthersCategory": true,
+            "generateOthersCategory": false,
             "oneTickPerBin": false,
             "filters": [],
             "isA": "dimension",
@@ -95,9 +95,9 @@
               }
             ],
             "sort": {
-              "type": "NATURAL",
-              "label": "Natural ordering",
-              "sortAscending": true
+              "type": "AGGREGATION",
+              "measureIdx": 0,
+              "label": "Average of Scheduled, descending"
             }
           }
         ],
@@ -205,9 +205,10 @@
           "gridLonDeg": 0.5,
           "gridLatDeg": 0.5
         },
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAABP0lEQVRoQ2NkGGGAEdm/8uVb9sP4Dzt9HIdjWIx6eDSGh1m6Hk3So0l6NEkP7RDAmYfNjBXdYV5bHab9a2h7E+F6nB5G9uBwaoSMehhb0h2N4SGcoYlK0sOpbh71ML7UOhzy8mgMj8YwUgiMJukhWD2N5mFCeRg20AfqXHB9/BYMUr8w1XT5UIlskmMY5uEff1l9OJh/b0H36GDP51T38GDvZdHUw9OCzSJBAfCP6c8nXxOpb4Mh2dPUw3AP/vvf/bDbd9uohwcgBOgWwwxMjKUg/4EKNVjBNxAF3IB6GFcE0zIgBqWH82zVDoMCQ4KP2ynaTtqGmil/UHoY1zATNbLCqIeJbVriamlh1f/vfze2QouUpIpc2JGqD1n9kIxhUj2MnBVGPTwckzTOGCYlqQxVtShJeqh6ghR3jzgPAwC5u3Y4XWmWiAAAAABJRU5ErkJggg\u003d\u003d",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
-        "legendPlacement": "OUTER_RIGHT"
+        "legendPlacement": "OUTER_BOTTOM"
       },
       "maxDataBytes": 157286400
     }
